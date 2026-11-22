@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.1](https://github.com/gersonrs/modern-gitops-stack-module-spark-cluster/compare/v1.1.0...v1.1.1) (2026-11-22)
+
+
+### 🔥 Bug Fixes
+
+* **ci:** run release-please with GITHUB_TOKEN ([#4](https://github.com/gersonrs/modern-gitops-stack-module-spark-cluster/issues/4)) ([2f3e9cd](https://github.com/gersonrs/modern-gitops-stack-module-spark-cluster/commit/2f3e9cd822d1645fd4ccce18a80f322073e765aa))
+* **ci:** use PROJECT_APP_PRIVATE_KEY in release-please ([#3](https://github.com/gersonrs/modern-gitops-stack-module-spark-cluster/issues/3)) ([5e6b0bc](https://github.com/gersonrs/modern-gitops-stack-module-spark-cluster/commit/5e6b0bc395c30222ffd1d89c9c77c0a38eb66fab))
+* pin the spark chart version instead of a wildcard ([#2](https://github.com/gersonrs/modern-gitops-stack-module-spark-cluster/issues/2)) ([70fa733](https://github.com/gersonrs/modern-gitops-stack-module-spark-cluster/commit/70fa733f006db87f84f5a783ec73458eeeb6bfa4))
+
 ## [1.1.0](https://github.com/GersonRS/modern-gitops-stack-module-spark-cluster/compare/v1.0.0...v1.1.0) (2025-02-16)
 
 
