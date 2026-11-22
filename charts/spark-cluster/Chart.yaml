@@ -5,4 +5,4 @@ version: "0"
 dependencies:
   - name: spark
     repository: oci://registry-1.docker.io/bitnamicharts
-    version: "*.*.*"
+    version: "9.3.3"
