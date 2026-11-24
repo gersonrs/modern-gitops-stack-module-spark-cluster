@@ -1,6 +1,48 @@
 = modern-gitops-stack-module-spark-cluster
 // Document attributes to replace along the document
+:spark-chart-version: 9.3.3
+:original-repo-url: https://github.com/bitnami/charts
 
+A https://modern-gitops-stack.io[Modern GitOps Stack] module to deploy a standalone Apache Spark cluster (master and workers) for interactive and batch jobs.
+
+The spark chart used by this module is shipped in this repository as well, in order to avoid any unwanted behaviors caused by unsupported versions.
+
+[cols="1,1,1",options="autowidth,header"]
+|===
+|Current Chart Version |Original Repository |Default Values
+|*9.3.3* |https://github.com/bitnami/charts/tree/main/bitnami/spark[spark] |https://artifacthub.io/packages/helm/spark/spark/9.3.3?modal=values[`values.yaml`]
+|===
+
+== Usage
+
+This module can be declared by adding the following block to your Terraform configuration:
+
+[source,terraform]
+----
+module "spark-cluster" {
+  source = "git::https://github.com/GersonRS/modern-gitops-stack-module-spark-cluster.git?ref=<RELEASE>"
+
+  cluster_name   = local.cluster_name
+  base_domain    = local.base_domain
+  subdomain      = local.subdomain
+  cluster_issuer = local.cluster_issuer
+  app_autosync   = local.app_autosync
+
+  dependency_ids = {
+    minio = module.minio.id
+  }
+}
+----
+
+The application is deployed to the `processing` namespace.
+
+== Technical Reference
+
+=== Dependencies
+
+==== `module.minio.id`
+
+Spark reads and writes the warehouse in MinIO.
 
 // BEGIN_TF_DOCS
 === Requirements
