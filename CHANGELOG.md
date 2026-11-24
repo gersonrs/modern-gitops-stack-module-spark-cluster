@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/gersonrs/modern-gitops-stack-module-spark-cluster/compare/v1.1.1...v1.1.2) (2026-11-24)
+
+
+### 📚 Documentation
+
+* add usage and dependencies to the module documentation ([#6](https://github.com/gersonrs/modern-gitops-stack-module-spark-cluster/issues/6)) ([23e1228](https://github.com/gersonrs/modern-gitops-stack-module-spark-cluster/commit/23e12280c4d01cbb495c74a4e8499bd104cadb1f))
+
 ## [1.1.1](https://github.com/gersonrs/modern-gitops-stack-module-spark-cluster/compare/v1.1.0...v1.1.1) (2026-11-22)
 
 
